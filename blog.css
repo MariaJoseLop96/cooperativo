@@ -1,0 +1,71 @@
+header{
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+}
+
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #efefef;
+}
+
+header{
+    background-color: rgb(149, 29, 224);
+    color: white;
+    padding:3rem 2rem ; /*  medidas relativas dependiendo dl tamaño de lafunente de la etiqueta html */
+}
+
+header h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.container{
+    width: 400px;
+    margin: 0 auto;
+}
+section article{
+    transition: all box-shadow 0.3s ease; /*que propiedades de ccs queremos que sean animadas,
+     hay que indicar un prigen y con un evento el final.
+      origen box shadow, y el final que haga eso*/
+    background-color: white;
+    margin:  1rem 0;   /*1REM VERTICAL Y 0 HORIZONTAL*/
+    border-radius: 0.5rem;
+    padding: 0.25rem 0 ;  /* 025 rem y 0 horizontal , si aca no le ponemos 0 eso a va aser que se separe la imagen*/
+    cursor: pointer;/*cambia el puntero cuadno estamos arriba*/
+
+}
+section article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+
+}
+section article h2, section article p{
+    margin: 1rem;
+}
+footer{
+    background-color: black;
+    padding: 3rem;
+    color: white;
+}
+
+footer section{
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a{
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: cornflowerblue;
+}
